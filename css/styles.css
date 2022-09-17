@@ -114,11 +114,23 @@ p {
 }
 
 .contact-link {
+  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  text-align: center;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -181,6 +193,17 @@ p {
   padding-bottom: 94px;
 }
 
+.specialty-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
 .specialty-list {
   display: flex;
 }
@@ -235,9 +258,11 @@ p {
 /* Our team */
 
 .team {
+  max-width: 1600px;
   background-color: var(--secondary-background-color);
   padding: 94px 0px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .team-img-title {
@@ -256,7 +281,7 @@ p {
   font-size: 16px;
   line-height: 1.2;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .infolist {
   background-color: var(--primary-link-color);
@@ -269,11 +294,83 @@ p {
   margin-right: 30px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-item a:hover,
+.social-item a:focus {
+  background-color: var(--accent-color);
+}
+
+.social-item a:hover > svg,
+.social-item a:focus > svg {
+  fill: #fff;
+}
+/* clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-item:hover > svg,
+.clients-list-item:focus > svg {
+  fill: var(--accent-color);
+}
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-svg {
+  fill: #afb1b8;
+}
+
 /* footer */
 
 .main-footer {
   background-color: var(--primary-background-color);
   padding: 60px 0px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-adress {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -311,6 +408,49 @@ p {
 .adress a:focus {
   color: var(--accent-color);
 }
+
+.footer-social {
+  width: 206px;
+}
+
+.footer-social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-footer-item > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-footer-item > a {
+  display: flex;
+}
+
+.social-footer-item > a:hover,
+.social-footer-item > a:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon-footer {
+  fill: #fff;
+}
+
 /* PORTFOLIO */
 
 .main-section {
@@ -345,6 +485,8 @@ p {
 .portfolio-nav-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .info-list {
@@ -355,18 +497,25 @@ p {
 .portfolio-info-list {
   background-color: var(--primary-link-color);
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .portfolio-info-list:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
-.portfolio-info-list {
-  margin-right: 30px;
-}
-
 .portfolio-info-list:nth-child(3n + 3) {
   margin-right: 0;
+}
+
+.portfolio-info-list > a {
+  display: block;
+}
+
+.portfolio-info-list > a:hover,
+.portfolio-info-list > a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
