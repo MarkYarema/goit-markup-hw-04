@@ -124,7 +124,14 @@ p {
 /* Hero */
 
 .hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bgr.jpg);
   background-color: var(--primary-background-color);
+  margin: 0 auto;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 200px 0px;
 }
