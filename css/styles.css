@@ -421,10 +421,6 @@ p {
   color: var(--accent-color);
 }
 
-.footer-social {
-  width: 206px;
-}
-
 .footer-social-text {
   font-weight: 700;
   font-size: 14px;
@@ -437,7 +433,7 @@ p {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .social-footer-item > a {
